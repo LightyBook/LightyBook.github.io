@@ -116,8 +116,26 @@ body{
 #slider{
 	position:absolute;
 	right:0;
-	padding: 4em 1.25em;
-	margin: 13em 0 0;
+	padding: 1em;
+	margin: 3em 0 0;
+	background:gray;
+	border:1px solid #FFF;
+	display:flex;
+	flex-direction:row;
+	color:white;
+	line-height: 2em;
+	text-align:center;
+}
+
+#slider img{
+	width:4.5em;
+	width:4.5em;
+	height:6em;
+	padding-left:0.75em;
+}
+
+#slider img:nth-of-type(1){
+	padding-left:1em;
 }
 
 /*footer area*/

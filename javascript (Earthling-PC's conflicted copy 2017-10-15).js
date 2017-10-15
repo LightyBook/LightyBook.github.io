@@ -47,10 +47,8 @@ function grow(){
 	if($slider_width<24){
 	$slider.css('width','35em');
 	putAssets();
-	$($assets).show();
 	}
 	if($slider_width>24){
-		$($assets).hide();
 		$slider.css('width','3em');
 	}
 }
