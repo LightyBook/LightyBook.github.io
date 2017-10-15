@@ -10,6 +10,7 @@ var $leftPage=$("<div id='leftPage'></div>");
 var $rightPage=$(".rightPage");
 var $assetsImages=$("<img class='assetsImages' id='0' src='img/BreadAsset.png' alt='Bread'/><img class='assetsImages' id='1' src='img/CarrotAsset.png' alt='Carrot'/><img class='assetsImages' src='img/ChocolateAsset.png'/><img src='img/GrapesAsset.png'/><img src='img/IcecreamAsset.png'/><img src='img/LollipopAsset.png'/><img src='img/PizzaAsset.png'/>");
 var $assets=[];
+var $pages=$("<img class='pages' id='0' src='img/PageOne.png'/><img class='pages' id='1' src='img/PageTwo.png'/>");
 
 $book.append($titleButton);
 $titlePage.append($coverImage);
@@ -25,10 +26,10 @@ $titleButton.on("click",nextPage);
 function nextPage(){
 	$titleButton.hide();
 	$coverImage.hide();
-	$titlePage.css('width','22em').css('height','29em').css('margin-left',"26.5em").css('margin-right',"0");
+	addPages()
 	appendButtons();
 	appendSlider();
-	$rightPage.show().css('margin-right','26.75em').css('margin-top','2em');
+	$rightPage.show();
 }
 
 function appendButtons(){
@@ -64,4 +65,10 @@ function putAssets(){
 	for(i=0;i<$assets.length;i++){
 	$slider.append($assets);
 	}
+}
+
+function addPages(){
+	$book.css('margin-top','2em').css('margin-bottom','2em');
+	$titlePage.append($pages[0]).css('margin-right','2.3em');
+	$rightPage.append($pages[1]);
 }

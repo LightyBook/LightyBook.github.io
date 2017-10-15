@@ -29,10 +29,10 @@ body{
 
 .book{
 	display:flex;
-	flex-direction:row;
-	justify-content:space-around;
-	position:relative;
+	align-items:center;
+	justify-content:center;
 	background: lavender;
+	margin: 4.5em 0;
 }
 
 .book img{
@@ -43,33 +43,22 @@ body{
 /* pages */
 
 
-.leftPage,
+.titlePage,
 .rightPage{
-	width: 22em;
-	height: 29em;
-	background: #FFF;
 	box-shadow: 0.125em 0.125em 0.125em 0.125em rgba(0,0,0,0.5);
+	background:#FFF;
+	padding:1em;
 }
 
-.leftPage{
-	margin:1em;
-	padding:5em;
-}
 
 /* nav buttons */
 
-.book .titlePage{
-	box-shadow: 0.125em 0.125em 0.125em 0.125em rgba(0,0,0,0.5);
-	margin:2em;
-	padding:2em;
-	background:#FFF;
-}
 
 
 #titleButton{
 	height:2.5em;
 	width:2.5em;
-	margin-left:30em;
+	margin-left:10em;
 }
 
 #leftButton,
@@ -95,22 +84,13 @@ body{
 	align-content:center;
 	justify-content:center;
 	flex-direction:row;
-	
 	margin-right:20em;
 }
 
-
-#leftButton{
-}
-
 #rightButton{
-	
 	margin-left:7em;
 }
 
-#titleButton{
-	margin: 6em 0 0 7em;
-}
 
 /* slider */
 #slider{
