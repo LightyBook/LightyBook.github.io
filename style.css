@@ -1,0 +1,146 @@
+/* navigation */
+
+body{
+	background: lavender;
+}
+
+.navbar{
+	background:#000;
+	font-size: calc(0.5em+0.5vw);
+	font-family: 'Salsa', cursive;
+}
+
+.nav{
+	text-align:center;
+	font-size: 1.75em;
+}
+
+.nav ul{
+}
+.nav li{
+	padding:0.75em;
+}
+
+.nav #brand{
+	color: yellow;
+}
+
+/* book area */
+
+.book{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-around;
+	position:relative;
+	background: lavender;
+}
+
+.book img{
+	width:22em;
+	height:29em;
+}
+
+/* pages */
+
+
+.leftPage,
+.rightPage{
+	width: 22em;
+	height: 29em;
+	background: #FFF;
+	box-shadow: 0.125em 0.125em 0.125em 0.125em rgba(0,0,0,0.5);
+}
+
+.leftPage{
+	margin:1em;
+	padding:5em;
+}
+
+/* nav buttons */
+
+.book .titlePage{
+	box-shadow: 0.125em 0.125em 0.125em 0.125em rgba(0,0,0,0.5);
+	margin:2em;
+	padding:2em;
+	background:#FFF;
+}
+
+
+#titleButton{
+	height:2.5em;
+	width:2.5em;
+	margin-left:30em;
+}
+
+#leftButton,
+#rightButton{
+	height:1.5em;
+	width:1.5em;
+}
+
+#leftButton,
+#rightButton,
+#titleButton{
+	border:1px solid grey;
+	font-size: 2.5em;
+	position: absolute;
+	border-radius: 5%;
+	background: purple;
+	color: yellow;
+	cursor: pointer;
+}
+
+.navButtons{
+	display:flex;
+	align-content:center;
+	justify-content:center;
+	flex-direction:row;
+	
+	margin-right:20em;
+}
+
+
+#leftButton{
+}
+
+#rightButton{
+	
+	margin-left:7em;
+}
+
+#titleButton{
+	margin: 6em 0 0 7em;
+}
+
+/* slider */
+#slider{
+	position:absolute;
+	right:0;
+	padding: 4em 1.25em;
+	margin: 13em 0 0;
+}
+
+/*footer area*/
+
+footer{
+	text-align: center;
+	padding: 1.25em 0 0.25em;
+	background: #000;
+	color:white;
+	position: relative;
+	margin: auto;
+	position: fixed;
+	bottom:0;
+	left:0;
+	width:100vw;
+}
+
+/*responsive design*/
+
+@media (min-width: 37.5em){
+	.nav{
+		text-align:left;
+		font-style: bold;
+		font-size:2em;
+	}
+}
